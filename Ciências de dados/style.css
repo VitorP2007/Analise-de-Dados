@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
-    --bg-color: #001F3F;
-    --primary-color: #D6EFD8;
-    --secondary-color: #6A9AB0;
+    --bg-color: #222831;
+    --primary-color: #DDDDDD;
+    --secondary-color: #F05454;
     --font: "Nunito Sans", sans-serif;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--primary-color);
-    font-family: "Playwrite DE Grund", cursive;
+    font-family: var(--font);
     height: 100vh;
     margin: 0;
 }
@@ -42,8 +42,28 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    transform: scale(1.30);
+    transform: scale(0.90);
     transition: transform 0.1s;
+}
+
+.graficos-container {
+    margin: 5rem;
+}
+
+.grafico {
+    margin-top: 3rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secondary-color) solid 2px;
+}
+
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 footer {
